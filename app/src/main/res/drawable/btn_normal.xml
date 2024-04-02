@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/white"/>
-    <stroke android:color="@color/gray" android:width="4dp"/>
-    <corners android:radius="14dp"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bottom 15dp Shadow -->
+    <item>
+        <shape  android:shape="rectangle">
+            <!--Button Shadow Color -->
+            <solid android:color="@color/gray" />
+            <corners android:radius="14dp"/>
+        </shape>
+    </item>
+    <!-- White Top color -->
+    <item android:bottom="14px">
+        <shape  android:shape="rectangle">
+            <!-- Button TOP Color -->
+            <solid android:color="@color/white" />
+            <corners android:radius="14dp"/>
+            <stroke android:width="2dp" android:color="@color/gray"/>
+        </shape>
+    </item>
+</layer-list>
